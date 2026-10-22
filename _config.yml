@@ -1,0 +1,15 @@
+title: Joy Wangui
+description: System Administrator and cloud infrastructure engineer in Nairobi, Kenya. AWS, GCP, CI/CD, monitoring and troubleshooting.
+author: Joy Wangui
+url: "https://joykui33.github.io"
+baseurl: ""
+permalink: /writing/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    disable: true
+exclude:
+  - README.md
+  - index.backup.html
+  - LICENSE
