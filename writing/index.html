@@ -1,0 +1,25 @@
+---
+layout: base
+title: Writing
+---
+<section>
+  <div class="wrap">
+    <div class="term">Kui · writing</div>
+    <div class="two">
+      <div class="col-label">// articles</div>
+      <div>
+        <h2>Notes from <em>production.</em></h2>
+        <p class="sub" style="color:var(--ink-soft);max-width:56ch;margin-bottom:34px">Write-ups of real infrastructure work: incidents, release engineering, monitoring and the decisions behind them. Company and client details are left out.</p>
+        {% if site.posts.size > 0 %}
+        <div class="posts">
+          {% for post in site.posts %}
+          <a href="{{ post.url | relative_url }}"><span class="d">{{ post.date | date: "%d %b %Y" }}</span><span><span class="t">{{ post.title }}</span>{% if post.summary %}<span class="x">{{ post.summary }}</span>{% endif %}</span></a>
+          {% endfor %}
+        </div>
+        {% else %}
+        <div class="empty">$ ls ./writing → first article in progress</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
